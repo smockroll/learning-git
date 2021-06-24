@@ -1,0 +1,40 @@
+BRANCH & MERGE
+Isolating work in branches, changing context, and integrating changes
+
+1. list your branches (a * will appear next to the currently active branch)
+git branch
+
+2. list your branches on remote machine 
+git branch -r 
+
+3. list all brances (local and remote)
+git branch -a
+
+4. create a new branch at the current commit
+git branch [branch-name]
+
+5. switch to another branch and check it out into your working directory
+git checkout [branch-name]
+
+6. create and switch to another branch in one step: 
+git checkout -b [branch name]
+
+7. switch to the previous branch 
+git checkout - 
+
+8. push a new branch on remote repository (the first time only)
+git push -u origin feature-a 
+
+9. delete a branch 
+git checkout main 
+git branch -d [branch name]
+
+10. merge the specified branch’s history into the main
+git checkout main
+git merge [branch]
+
+11. show all commits in the current branch’s history
+git log
+
+12 show all commits in the current branch's history by one line 
+git log --oneline
